@@ -1,9 +1,11 @@
 # Commander v5 Exercise
 
-Try out the new nested command support in Commander v5. Emulate a real cli which includes nested commands,
+Try out the new support for nested subcommands with action handlers coming in Commander v5 .
+
+Emulate a real cli which includes nested commands,
 based on [cordova-cli](https://cordova.apache.org/docs/en/9.x/reference/cordova-cli/index.html)
 
-The nested commands are `config` and `platform`.
+The nested commands are `config` implemented inline, and `platform` implemented in a module and added using `.addCommand`.
 
 ```sh
 $ node index.js platform rm --help
